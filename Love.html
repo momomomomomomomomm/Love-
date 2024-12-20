@@ -13,10 +13,18 @@
 </head>
 <body>
     <!-- Audio player with no controls and autoplay enabled -->
-    <audio autoplay loop>
-        <source src="https://gz-sycdn.kuwo.cn/1ca6aab91b2cb4c199f044b602f3379c/676518de/resource/n2/40/41/2109404279.mp3?bitrate$128&from=vip" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <button id="playButton">Music</button>
+<audio id="myAudio" loop>
+    <source src="https://gz-sycdn.kuwo.cn/1ca6aab91b2cb4c199f044b602f3379c/676518de/resource/n2/40/41/2109404279.mp3?bitrate$128&from=vip" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.getElementById('playButton').addEventListener('click', function() {
+        var audio = document.getElementById('myAudio');
+        audio.play();
+    });
+</script>
 </body>
 </html>
   <title>浪漫至死不渝</title>
